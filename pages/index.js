@@ -1,10 +1,10 @@
 export default function Home() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-black">
+    <div className="h-screen w-screen bg-black flex items-center justify-center">
       <img
         src="/botbets.jpg"
         alt="Bot Bets Logo"
-        className="w-full max-w-xs mx-auto"
+        className="max-w-xs w-full object-contain"
       />
     </div>
   );
