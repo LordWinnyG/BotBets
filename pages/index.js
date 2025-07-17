@@ -1,4 +1,3 @@
-
 export default function Predictions() {
   const predictions = [
     {
@@ -22,17 +21,28 @@ export default function Predictions() {
   ];
 
   return (
-    <div className="min-h-screen bg-white px-4 py-8 text-black">
-      <h1 className="text-3xl font-bold text-center mb-6">📊 AI-Powered Predictions</h1>
-      <div className="grid gap-6 max-w-2xl mx-auto">
+    <div className="min-h-screen bg-white px-4 py-8 text-black flex flex-col items-center">
+      <img
+        src="/botbets.jpg"
+        alt="Bot Bets Logo"
+        className="w-40 h-auto mb-6"
+      />
+      <h1 className="text-3xl font-bold text-center mb-6">
+        AI-Powered Predictions
+      </h1>
+      <div className="grid gap-6 max-w-2xl w-full">
         {predictions.map((pred) => (
           <div key={pred.id} className="border border-gray-300 rounded-lg p-4 shadow-md">
             <p className="text-lg font-semibold">{pred.text}</p>
             <p className="text-sm text-gray-600">Deadline: {pred.deadline}</p>
             <p className="text-sm text-green-600">Bot Confidence: {pred.botConfidence}</p>
             <div className="flex justify-between mt-4">
-              <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Bet With Bot</button>
-              <button className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Bet Against Bot</button>
+              <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+                Bet With Bot
+              </button>
+              <button className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+                Bet Against Bot
+              </button>
             </div>
           </div>
         ))}
