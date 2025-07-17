@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="w-screen h-screen flex items-center justify-center bg-white p-4">
+    <div className="min-h-screen w-full flex items-center justify-center bg-white px-4">
       <img
         src="/botbets.jpg"
         alt="Bot Bets Logo"
