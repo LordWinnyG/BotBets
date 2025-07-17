@@ -4,7 +4,7 @@ export default function Home() {
       <img
         src="/botbets.jpg"
         alt="Bot Bets Logo"
-        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain mb-6"
+        className="w-48 sm:w-56 md:w-64 h-auto object-contain mb-6"
       />
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4">
         Bot Bets is coming soon.
