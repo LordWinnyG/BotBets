@@ -1,8 +1,7 @@
-
 export default function Home() {
   return (
-    <div className="flex items-center justify-center h-screen bg-black text-green-400 font-mono">
-      <h1 className="text-3xl">🤖 Welcome to Bot Bets</h1>
+    <div className="flex items-center justify-center min-h-screen bg-black">
+      <img src="/botbets-logo.png" alt="Bot Bets Logo" className="w-1/2 max-w-xs" />
     </div>
   );
 }
